@@ -1,0 +1,12 @@
+.donate-container{
+    flex: 1;
+}
+
+.donate-container img{
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

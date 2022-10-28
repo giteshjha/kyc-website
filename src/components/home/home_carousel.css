@@ -1,0 +1,20 @@
+.home-carousel-container{
+    padding: 10px;
+    /*flex: 1;*/
+    /*max-height: 50px;*/
+}
+
+/*.home-carousel-container > div{*/
+/*    max-height: 10px;*/
+/*}*/
+
+.home-carousel-container img {
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+}

@@ -1,0 +1,14 @@
+.event-container {
+    /*flex: 1;*/
+}
+
+.event-container img {
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+}
