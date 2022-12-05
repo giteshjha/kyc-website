@@ -1,4 +1,4 @@
-import { AppleOutlined, UserAddOutlined, EnvironmentFilled, DollarCircleFilled } from '@ant-design/icons';
+import { UserAddOutlined, DollarCircleFilled } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 // import 'antd/dist/antd.min.css';
@@ -83,7 +83,7 @@ const socialItems: MenuProps['items'] = [
 ];
 
 const Navbar: React.FC = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const [current, setCurrent] = useState('kyc');
 
     const onClickMenu: MenuProps['onClick'] = e => {

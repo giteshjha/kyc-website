@@ -1,4 +1,4 @@
-import {FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare} from "react-icons/fa";
+import {FaFacebookSquare, FaYoutubeSquare} from "react-icons/fa";
 import React from "react";
 import './footer.css'
 

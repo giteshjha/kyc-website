@@ -5,32 +5,25 @@ import two from './../../assets/home_carousel/2.jpeg';
 import three from './../../assets/home_carousel/3.jpeg';
 import four from './../../assets/home_carousel/4.jpeg';
 import five from './../../assets/home_carousel/5.jpeg';
-const contentStyle: React.CSSProperties = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-};
 
 export const HomeCarousel = () => {
     return (
         <div className={"home-carousel-container"}>
             <Carousel autoplay autoplaySpeed={4000}>
                 <div>
-                   <img src={one}/>
+                   <img src={one} alt={""}/>
                 </div>
                 <div>
-                    <img src={two}/>
+                    <img src={two} alt={""}/>
                 </div>
                 <div>
-                    <img src={three}/>
+                    <img src={three} alt={""}/>
                 </div>
                 <div>
-                    <img src={four}/>
+                    <img src={four} alt={""}/>
                 </div>
                 <div>
-                    <img src={five}/>
+                    <img src={five} alt={""}/>
                 </div>
             </Carousel>
 

@@ -9,7 +9,7 @@ export const Donate = () => {
             </div>
 
             <div>
-                <img src={payment}/>
+                <img src={payment} alt={"payment-image"}/>
             </div>
         </div>
     )
