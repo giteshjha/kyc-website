@@ -1,46 +1,117 @@
-# Getting Started with Create React App
+### What you can find useful in this project: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [x] Responsive design (mobile, tablet, desktop)
+- [x] 'NavBar' freezed when you start scrolling
+- [x] Simple 'Slider' implementation
+- [x] Project build based on TypeScript using Nextjs, TailwindCss
 
-## Available Scripts
+-------
 
-In the project directory, you can run:
+### Also below some more interesting things i have learned
 
-### `npm start`
+- Example of freezed NavBar [components/NavigationBar/NavBar.tsx](components/NavigationBar/NavBar.tsx)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```tsx
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor("#ffffff");
+        setTextColor("#000000");
+      } else {
+        setColor("transparent");
+        setTextColor("#ffffff");
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
+```
+--------
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Slider [components/Slider/Slider.tsx](components/Slider/Slider.tsx)
 
-### `npm test`
+```tsx
+const Slider = ({ slides }: Props) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
-### `npm run build`
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  return (
+    <div id="gallery" className="max-w-[1240px] mx-auto">
+      <h1 className="text-2xl font-bold text-center p-4">Gallery</h1>
+      <div className="relative flex justify-center p-4">
+        {SliderData.map((slide, index) => {
+          return (
+            <div
+              key={index}
+              className={
+                index === current
+                  ? "opacity-[1] ease-in duration-1000"
+                  : "opacity-0"
+              }
+            >
+              <FaArrowCircleLeft
+                onClick={prevSlide}
+                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                size={50}
+              />
+              {index === current && (
+                <Image
+                  src={slide.image}
+                  alt="/"
+                  width="1440"
+                  height="600"
+                  objectFit="cover"
+                />
+              )}
+              <FaArrowCircleRight
+                onClick={nextSlide}
+                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                size={50}
+              />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+--------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Set the root to navigate to different part of the page (please do not forget to put `id="portfolio"` for smooth scrolling)
+```js
+<Link href="/portfolio">My roads</Link>
+```
 
-### `npm run eject`
+```js
+const Portfolio = () => {
+    return (
+        <div id="portfolio" className="max-w-[1240px] mx-auto py-16 text-center">
+            <h1 className="font-bold text-2xl p-4">Amazing roads</h1>
+            <div className="grid grid-rows-none md:grid-cols-5 p-4 gap-4">
+                <div className="w-full h-full col-span-2 md:col-span-3 row-span-2">
+                    <Image
+                        src="https://images.unsplash.com/photo-1520595439914-fcbb3a25d924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                        alt="/"
+                        layout="responsive"
+                        width="677"
+                        height="451"
+                    />
+```
+---------
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Reference:
+- thanks goes to @Clint Briley [youtube](https://www.youtube.com/watch?v=HVyct9EUNP8), [repo](https://github.com/fireclint/NextJS-Tailwind-Responsive)
+- try it out [Pesticide for Chrome](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi)
