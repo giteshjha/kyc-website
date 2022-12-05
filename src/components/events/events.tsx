@@ -4,7 +4,7 @@ import './events.css'
 export const Events = () => {
     return (
         <div className={"event-container"}>
-            <img src={one} alt={"event-image"}/>
+            <img src={one} alt={"event"}/>
         </div>
     )
 }
