@@ -4,6 +4,7 @@ import one from './../../assets/home_carousel/1.jpeg';
 import two from './../../assets/home_carousel/2.jpeg';
 import three from './../../assets/home_carousel/3.jpeg';
 import four from './../../assets/home_carousel/4.jpeg';
+import five from './../../assets/home_carousel/5.jpeg';
 const contentStyle: React.CSSProperties = {
     height: '160px',
     color: '#fff',
@@ -15,7 +16,7 @@ const contentStyle: React.CSSProperties = {
 export const HomeCarousel = () => {
     return (
         <div className={"home-carousel-container"}>
-            <Carousel autoplay>
+            <Carousel autoplay autoplaySpeed={4000}>
                 <div>
                    <img src={one}/>
                 </div>
@@ -27,6 +28,9 @@ export const HomeCarousel = () => {
                 </div>
                 <div>
                     <img src={four}/>
+                </div>
+                <div>
+                    <img src={five}/>
                 </div>
             </Carousel>
 

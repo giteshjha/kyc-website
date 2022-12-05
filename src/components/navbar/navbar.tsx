@@ -1,7 +1,7 @@
 import { AppleOutlined, UserAddOutlined, EnvironmentFilled, DollarCircleFilled } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
-import 'antd/dist/antd.min.css';
+// import 'antd/dist/antd.min.css';
 import './navbar.css'
 import React, { useState } from 'react';
 import logo from './../../assets/static/kyc_logo.png';
@@ -59,13 +59,13 @@ const socialItems: MenuProps['items'] = [
         key: 'donate',
         icon: <DollarCircleFilled />,
     },
-    {
-        label: <a href="https://kycgym.com/" target="_blank">
-            Gym
-        </a> ,
-        key: 'gym',
-        icon: <EnvironmentFilled />,
-    },
+    // {
+    //     label: <a href="https://kycgym.com/" target="_blank">
+    //         Gym
+    //     </a> ,
+    //     key: 'gym',
+    //     icon: <EnvironmentFilled />,
+    // },
     {
         label: <a href="https://www.facebook.com/kamalyuvaclubindia" target="_blank" rel="noopener noreferrer">
             Facebook
