@@ -8,7 +8,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
               >
                 Terms of Service
               </a>
@@ -16,7 +16,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
               >
                 Privacy Policy
               </a>
@@ -24,7 +24,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
               >
                 Ad Choices
               </a>
@@ -32,7 +32,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
               >
                 Cookie Policy
               </a>
@@ -40,7 +40,7 @@ export default function Footer() {
             <li>
               <a
                 href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
+                className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
               >
                 Partners
               </a>
@@ -49,12 +49,18 @@ export default function Footer() {
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <a
               href="/"
-              className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
+              className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
             >
               {` © ${new Date().getFullYear()} KYC  Foundation.`}
             </a>
           </ul>
         </div>
+      </div>
+      <div className="text-[8px] px-4 sm:text-center">
+        Made with<span className="px-2"> 💻</span> by{" "}
+        <a href="https://whoamishubham.github.io" className="text-[#1DA1F2]">
+          Shubham
+        </a>
       </div>
     </footer>
   );

@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { SliderData } from "./SliderData";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 interface Props {
   slides: any;
   autoStart?: boolean;
+  title?: string;
 }
 
-const Slider = ({ slides, autoStart = false }: Props) => {
+const Slider = ({ slides, autoStart = false, title = "Gallery" }: Props) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
   const sliderRef = React.useRef<any>();
@@ -22,7 +22,7 @@ const Slider = ({ slides, autoStart = false }: Props) => {
   useEffect(() => {
     sliderRef.current = setInterval(() => {
       autoStart && nextSlide();
-    }, 2000);
+    }, 4000);
     return () => {
       clearInterval(sliderRef.current);
     };
@@ -34,35 +34,37 @@ const Slider = ({ slides, autoStart = false }: Props) => {
 
   return (
     <div id="gallery" className="max-w-[1240px] mx-auto">
-      <h1 className="text-2xl font-bold text-center p-4 py-0">Gallery</h1>
+      <h1 className="text-2xl font-bold text-center p-4 py-0">{title}</h1>
       <div className="relative flex justify-center p-4">
-        {SliderData.map((slide, index) => {
+        {slides.map((slide, index) => {
           return (
             <div
               key={index}
-              className={
-                index === current ? "opacity-[1] ease-in" : "opacity-0"
-              }
+              className={index === current ? "" : "opacity-0 image"}
             >
-              <FaArrowCircleLeft
-                onClick={prevSlide}
-                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
-                size={50}
-              />
+              {slides?.length > 1 && (
+                <FaArrowCircleLeft
+                  onClick={prevSlide}
+                  className="absolute m-auto top-0 bottom-0 left-[20px] text-white/70 cursor-pointer select-none z-[2] w-6 lg:w-16 md:w-10"
+                  size={50}
+                />
+              )}
               {index === current && (
                 <Image
                   src={slide.image}
                   alt="/"
                   width="1440"
                   height="600"
-                  objectFit="cover"
+                  objectFit="fill"
                 />
               )}
-              <FaArrowCircleRight
-                onClick={nextSlide}
-                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
-                size={50}
-              />
+              {slides?.length > 1 && (
+                <FaArrowCircleRight
+                  onClick={nextSlide}
+                  className="absolute m-auto top-0 bottom-0  right-[20px] text-white/70 cursor-pointer select-none z-[2] w-6 lg:w-16 md:w-10"
+                  size={50}
+                />
+              )}
             </div>
           );
         })}

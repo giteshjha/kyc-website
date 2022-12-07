@@ -1,31 +1,31 @@
 import Slider from "../Slider/Slider";
 import { SliderData } from "../Slider/SliderData";
+import { EventData } from "./EventData";
 
 /* eslint-disable @next/next/no-html-link-for-pages */
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="max-w-5xl pt-52 pb-24 mx-auto">
-        <h1 className="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
-          Create your next website fast and easy
+      <div className="max-w-5xl pt-40 md:pt-52 pb-10 md:pb-24 mx-auto">
+        <h1 className="text-30  md:text-60 lg:text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
+          Create your best version with our physical training programs
         </h1>
-        <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
-          Here is our collection of free to use templates made with Next.js &
-          styled with Tailwind CSS.
+        <p className="mx-4 sm:mx-auto text-sm md:text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
+          Gallery images are collection of initiatives taken by KYC Foundation.
         </p>
       </div>
       <div className="container flex flex-col items-center justify-center mx-auto">
         <Slider slides={SliderData} autoStart={true} />
       </div>
-      <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
+      <h2 className="pt-20 md:pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
         Events
       </h2>
       <br></br>
-      <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
-        Here is our collection of free to use templates made with Next.js &
-        styled with Tailwind CSS.
+      <p className="mx-4 sm:mx-auto text-sm text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 md:text-xl">
+        Here is our collection of current and upcoming events.
       </p>
-      <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
+      <Slider slides={EventData} autoStart={false} title={""} />
+      {/* <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
         <div className="ktq4">
           <img src="https://nine4.app/images/nine4-3.png"></img>
           <h3 className="pt-3 font-semibold text-lg text-white">
@@ -52,7 +52,7 @@ export default function Main() {
             odio.
           </p>
         </div>
-      </div>
+      </div> */}
       {/* <section className="relative pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="py-24 md:py-36">

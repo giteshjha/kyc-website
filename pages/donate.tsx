@@ -6,7 +6,7 @@ export default function donate() {
     <div>
       <Image
         src={
-          "https://kycfoundation.in/static/media/payment.47bf776ef24cec5c21d2.jpeg"
+          "https://ik.imagekit.io/kyc/static/payment.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670429892115"
         }
         alt="/"
         layout="fill"

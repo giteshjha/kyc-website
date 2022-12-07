@@ -3,7 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["images.unsplash.com","kycfoundation.in"],
+    domains: ["ik.imagekit.io", "kycfoundation.in"],
+    path:'',
+    loader: 'imgix',
   },
 };
 
