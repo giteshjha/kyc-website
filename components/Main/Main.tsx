@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <section className="text-gray-600 body-font">
       <div className="max-w-5xl pt-40 md:pt-52 pb-10 md:pb-24 mx-auto">
-        <h1 className="text-30  md:text-60 lg:text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
+        <h1 className="text-30  md:text-60 lg:text-80 text-center px-4 sm:px-auto font-4 lh-6 ld-04 font-bold text-white mb-6">
           Create your best version with our physical training programs
         </h1>
         <p className="mx-4 sm:mx-auto text-sm md:text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
