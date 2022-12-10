@@ -12,7 +12,7 @@ export default function News({
   const [selectedImage, setSelectedImage] = useState<undefined | number>(
     undefined
   );
-  const modal = useRef(null);
+  const modal = useRef<any>(null);
   const onClickOutside = (event: any) => {
     if (modal.current && !modal.current?.contains(event?.target)) {
       setSelectedImage(undefined);
