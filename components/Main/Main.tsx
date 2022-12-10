@@ -1,3 +1,5 @@
+import News from "../News/News";
+import { NewsData } from "../News/NewsData";
 import Slider from "../Slider/Slider";
 import { SliderData } from "../Slider/SliderData";
 import { EventData } from "./EventData";
@@ -25,6 +27,7 @@ export default function Main() {
         Current and upcoming events.
       </p>
       <Slider slides={EventData} autoStart={false} title={""} />
+      <News images={NewsData} />
       {/* <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
         <div className="ktq4">
           <img src="https://nine4.app/images/nine4-3.png"></img>
