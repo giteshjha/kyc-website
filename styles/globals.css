@@ -64,13 +64,13 @@ a {
 
 @responsive {
   .text-80 {
-    font-size: 80px;
+    font-size: 70px;
   }
   .text-60 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .text-30 {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 

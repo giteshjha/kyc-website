@@ -21,8 +21,8 @@ export default function Main() {
         Events
       </h2>
       <br></br>
-      <p className="mx-4 sm:mx-auto text-sm text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 md:text-xl">
-        Here is our collection of current and upcoming events.
+      <p className="mx-auto text-sm text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 md:text-xl">
+        Current and upcoming events.
       </p>
       <Slider slides={EventData} autoStart={false} title={""} />
       {/* <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
