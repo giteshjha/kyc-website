@@ -49,7 +49,7 @@ export default function News({
             <img
               src={image}
               alt="/"
-              className="w-[300px] h-[400px] object-fill"
+              className="w-[100px] h-[150px] md:w-[300px] md:h-[400px] object-fill"
               onClick={() => {
                 setSelectedImage(idx);
               }}
