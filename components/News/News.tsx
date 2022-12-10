@@ -35,7 +35,7 @@ export default function News({
   };
   const prevSlide = () => {
     setSelectedImage(
-      selectedImage === 0 ? length - 1 : (selectedImage || 1) - 1
+      selectedImage === 0 ? images?.length - 1 : (selectedImage || 1) - 1
     );
   };
   return (
