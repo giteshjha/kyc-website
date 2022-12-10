@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Slider from "../components/Slider/Slider";
-import { SliderData } from "../components/Slider/SliderData";
 import { NextSeo } from "next-seo";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
+import Ad from "../components/Ad/Ad";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +23,9 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Main />
+      <div className="block md:hidden">
+        <Ad />
+      </div>
       <Footer />
     </div>
   );

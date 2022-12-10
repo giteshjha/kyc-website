@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
+import Ad from "../Ad/Ad";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -83,6 +84,9 @@ export default function Header() {
             <i className={`fa-brands fa-youtube px-1 text-[#FF0000] fa-2x`} />
           </a>
         </div>
+      </div>
+      <div className="hidden md:block">
+        <Ad />
       </div>
     </header>
   );
