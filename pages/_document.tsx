@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -36,6 +37,19 @@ export default function Document() {
           referrerPolicy="no-referrer"
         />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-3NBWYVDK76"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3NBWYVDK76');
+        `}
+      </Script>
       <body>
         <Main />
         <NextScript />
