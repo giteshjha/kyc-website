@@ -39,10 +39,10 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/"
+                href="/team"
                 className="md:text-md text-sm text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
               >
-                Partners
+                Team
               </a>
             </li>
           </ul>

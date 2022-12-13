@@ -8,7 +8,7 @@ export default function Ad({
 }) {
   const [show, setShow] = useState(true);
   return !!show ? (
-    <div className="bg-indigo-600">
+    <div className="bg-indigo-600 w-full">
       <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">

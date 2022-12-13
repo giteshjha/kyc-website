@@ -8,7 +8,7 @@ import { EventData } from "./EventData";
 export default function Main() {
   return (
     <section className="text-gray-600 body-font px-2 md:px-auto">
-      <div className="max-w-5xl pt-40 md:pt-52 pb-10 md:pb-24 mx-auto">
+      <div className="max-w-5xl pb-10 md:pb-24 mx-auto">
         <h1 className="text-30  md:text-60 lg:text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
           Create your best version with our physical training programs
         </h1>

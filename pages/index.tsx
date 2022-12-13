@@ -24,10 +24,6 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Main />
-      <div className="block md:hidden">
-        <Ad />
-      </div>
-      <Footer />
     </div>
   );
 };
