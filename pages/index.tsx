@@ -11,16 +11,16 @@ const Home: NextPage = () => {
   return (
     <div className="text-black bg-black">
       <NextSeo
-        title="Home: nine4"
-        description="Welcome to nine4 homepage."
-        canonical="https://nine4-3.vercel.app/"
+        title="Home: Kyc Foundation"
+        description="Welcome to Kyc Foundation homepage."
+        canonical="https://kycfoundation.in/"
         openGraph={{
-          url: "https://nine4-3.vercel.app/",
+          url: "https://kycfoundation.in/",
         }}
       />
       <Head>
-        <title>KYC</title>
-        <link rel="icon" href="/favicon.png" />
+        <title>Kyc Foundation</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <Header />
       <Main />
