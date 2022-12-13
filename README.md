@@ -1,31 +1,32 @@
-### What you can find useful in this project: 
+### What you can find useful in this project:
 
 - [x] Responsive design (mobile, tablet, desktop)
 - [x] 'NavBar' freezed when you start scrolling
 - [x] Simple 'Slider' implementation
 - [x] Project build based on TypeScript using Nextjs, TailwindCss
 
--------
+---
 
 ### Also below some more interesting things i have learned
 
 - Example of freezed NavBar [components/NavigationBar/NavBar.tsx](components/NavigationBar/NavBar.tsx)
 
 ```tsx
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#ffffff");
-        setTextColor("#000000");
-      } else {
-        setColor("transparent");
-        setTextColor("#ffffff");
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
+useEffect(() => {
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor("#ffffff");
+      setTextColor("#000000");
+    } else {
+      setColor("transparent");
+      setTextColor("#ffffff");
+    }
+  };
+  window.addEventListener("scroll", changeColor);
+}, []);
 ```
---------
+
+---
 
 - Slider [components/Slider/Slider.tsx](components/Slider/Slider.tsx)
 
@@ -87,9 +88,10 @@ const Slider = ({ slides }: Props) => {
 };
 ```
 
---------
+---
 
 - Set the root to navigate to different part of the page (please do not forget to put `id="portfolio"` for smooth scrolling)
+
 ```js
 <Link href="/portfolio">My roads</Link>
 ```
@@ -109,9 +111,10 @@ const Portfolio = () => {
                         height="451"
                     />
 ```
----------
 
+---
 
 #### Reference:
+
 - thanks goes to @Clint Briley [youtube](https://www.youtube.com/watch?v=HVyct9EUNP8), [repo](https://github.com/fireclint/NextJS-Tailwind-Responsive)
 - try it out [Pesticide for Chrome](https://chrome.google.com/webstore/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi)
