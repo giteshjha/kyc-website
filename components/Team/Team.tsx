@@ -12,13 +12,13 @@ function Member({
   twitter = "",
 }) {
   return (
-    <div className="text-center text-gray-500 dark:text-gray-400">
+    <div className="text-center text-gray-400">
       <img
         className="mx-auto mb-4 w-36 h-36 rounded-full"
         src={avatar}
         alt={`${name} Avatar`}
       />
-      <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h3 className="mb-1 text-2xl font-bold tracking-tight text-white">
         {name}
       </h3>
       <p>{title}</p>
@@ -27,7 +27,7 @@ function Member({
           <li>
             <a
               href={facebook}
-              className="text-[#39569c] hover:text-gray-900 dark:hover:text-white"
+              className="text-[#39569c]  hover:text-white"
             >
               <i
                 className={`fa-brands fa-facebook px-1 text-[#4267B2] text-[20px]`}
@@ -39,7 +39,7 @@ function Member({
           <li>
             <a
               href={instagram}
-              className="text-[#c32aa3] hover:text-gray-900 dark:hover:text-white"
+              className="text-[#c32aa3]  hover:text-white"
             >
               <i
                 className={`fa-brands fa-instagram px-1 text-[#c32aa3] text-[20px]`}
@@ -51,7 +51,7 @@ function Member({
           <li>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300"
+              className="text-gray-900 hover:text-white text-gray-300"
             >
               <i
                 className={`fa-brands fa-linkedin px-1 text-[#0a66c2] text-[20px]`}
@@ -63,7 +63,7 @@ function Member({
           <li>
             <a
               href="#"
-              className="text-[#1da1f2] hover:text-gray-900 dark:hover:text-white"
+              className="text-[#1da1f2] hover:text-white"
             >
               <i
                 className={`fa-brands fa-twitter px-1 text-[#1da1f2] text-[20px]`}
@@ -81,10 +81,10 @@ export default function Team({ title = "Our team", subtitle = "" }) {
     <section className="bg-black  min-h-[70vh]">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
             {title}
           </h2>
-          <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+          <p className="font-light  sm:text-xl text-gray-400">
             {subtitle}
           </p>
         </div>
