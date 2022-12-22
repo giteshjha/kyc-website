@@ -26,7 +26,7 @@ export default function Main() {
       <p className="mx-auto text-sm text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 md:text-xl">
         Current and upcoming events.
       </p>
-      <Slider slides={EventData} autoStart={false} title={""} />
+      <Slider slides={EventData} autoStart={true} title={""} />
       <News images={NewsData} />
       {/* <div className="pt-32 pb-32 max-w-6xl mx-auto fsac4 md:px-1 px-3">
         <div className="ktq4">
