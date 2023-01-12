@@ -41,6 +41,8 @@ export const NewsData = [
     "https://ik.imagekit.io/kyc/news/40.jpeg",
     "https://ik.imagekit.io/kyc/news/41.jpeg",
     "https://ik.imagekit.io/kyc/news/42.jpeg",
-    "https://ik.imagekit.io/kyc/news/43.jpeg"
+    "https://ik.imagekit.io/kyc/news/43.jpeg",
+    "https://ik.imagekit.io/kyc/news/44.jpeg",
+    "https://ik.imagekit.io/kyc/news/45.jpeg"
   ];
   
